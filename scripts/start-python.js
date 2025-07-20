@@ -1,7 +1,7 @@
 require('dotenv').config({path: '.env.local'});
 const { spawn } = require('child_process');
 
-const pythonPath = process.env.PYTHON_PATH || 'python';
+const pythonPath = process.env.PYTHON_PATH || 'python3';
 
 // Start the Python backend
 const pythonProcess = spawn(pythonPath, ['main.py'], { stdio: 'inherit', cwd: process.cwd() });

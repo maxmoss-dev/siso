@@ -8,7 +8,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "set-python-path": "node -e \"console.log('PYTHON_PATH=' + require('child_process').execSync('which python').toString().trim())\" > .env.local"
+    "set-python-path": "node -e \"console.log('PYTHON_PATH=' + require('child_process').execSync('which python3').toString().trim())\" > .env.local"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.4",
